@@ -1,0 +1,54 @@
+
+@media screen and (min-width: 600px) {
+    .header {
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid;
+    }
+
+    #logo {
+        width: 9rem;
+    }
+    
+    .nav__bar {
+        background-color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .item__list {
+        display: flex;
+        padding: 0 1rem;
+    }
+    
+    .item__link {
+        margin: 0 0.5rem;
+        font-weight: 400;
+        font-size: 1rem;  
+        color: #000000;
+    }
+
+    #home{
+        height: 500px;
+    }
+
+
+    /*hamburguer menu*/
+
+    .container {
+        display: none;
+    }
+
+    .logo__container {
+        display: none;
+    }
+    
+    .buttons__container{
+        display: none;
+    }
+      
+}
+
