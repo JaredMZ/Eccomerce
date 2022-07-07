@@ -1,0 +1,33 @@
+
+.product {
+    width: 1fr;
+    height: auto;
+    padding: 1rem;
+    border: 1px solid;
+}
+
+.product__img {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+   
+}
+
+.product__text {
+    cursor: pointer;
+    display: block;
+}
+
+.product__name {
+    font-size: 1rem;
+
+}
+.product__price {
+    font-size: 1.4rem;
+}
+
+.product__tag {
+    font-size: 0.6rem;
+    
+}

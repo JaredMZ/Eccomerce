@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
 
 :root {
 
@@ -24,7 +24,7 @@ a {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .header {
@@ -39,12 +39,12 @@ body {
 .logo__container {
     display: flex;
     align-items: center;
-    margin-left: 80px;
+    margin:0 1rem ;
 }
 
 .logo__container img {
-    height: 40px;
-    width: 140px;
+    height: 30px;
+    width: 100px;
 }
 
 
@@ -60,16 +60,13 @@ body {
     color: #000000;
     margin-top: 10px;
     font-size: 1.8rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .nav__bar{
     display: none;
 }
 
-#logo {
-    width: 7rem;
-}
 
 .icon {
     margin-top: -2px;

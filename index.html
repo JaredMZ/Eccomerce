@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/hamburguer-menu.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -35,47 +36,47 @@
                 <ul class="item__list">
                     <li class="item"><a href="" class="item__link">SEARCH</a></li>
                     <li class="item"><a href="" class="item__link">ABOUT</a></li>
-                    <li class="item"><a href="" class="item__link"><i class='icon bx bxs-user-circle'></i></a></li>
-                    <li class="item"><a href="" class="item__link"><i class='icon bx bxs-cart'></i></a></li>
+                    <li class="item"><a href="" class="item__link"><i class='icon bx bx-user'></i></a></li>
+                    <li class="item"><a href="" class="item__link"><i class='icon bx bx-cart-alt'></i></a></li>
                 </ul>
             </div>
         </nav>
 
 
-        
-            <div class="container">
-                <nav class="navigation" role="navigation">
-                    <div id="menuToggle">
-                        <input type="checkbox" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <ul id="menu">
-                            <a href="#">
-                                <li>HOME</li>
-                            </a>
-                            <a href="#">
-                                <li>PRODUCTS</li>
-                            </a>
-                            <a href="#">
-                                <li>ABOUT</li>
-                            </a>
-                            <a href="#">
-                                <li>CONTACT</li>
-                            </a>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
 
-            <div class="logo__container">
-                <img src="assets/img/tlaloc_store_logo.png" alt="tlaloc logo">
-            </div>
+        <div class="container">
+            <nav class="navigation" role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="#">
+                            <li>HOME</li>
+                        </a>
+                        <a href="#">
+                            <li>PRODUCTS</li>
+                        </a>
+                        <a href="#">
+                            <li>CONTACT</li>
+                        </a>
+                        <a href="#">
+                            <li>ABOUT</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
-            <div class="buttons__container">
-                <a href="" ><i class='item__link bx bxs-user-circle'></i></a>
-                <a href="" ><i class='item__link bx bxs-cart'></i></a>
-            </div>
+        <div class="logo__container">
+            <img src="assets/img/tlaloc_store_logo.png" alt="tlaloc logo">
+        </div>
+
+        <div class="buttons__container">
+            <a href=""><i class='item__link bx bx-user'></i></a>
+            <a href=""><i class='item__link bx bx-cart-alt'></i></a>
+        </div>
 
     </header>
 
@@ -86,13 +87,53 @@
         </div>
     </section>
 
-    <section class="section" id="products">
+    <section class="section">
         <div class="categories">
-            <div class="category category__banner" id="pcm">
-                <a class="category__title">PC</a>
-                <h6 class="category__subtitle">All components you need for PC</h6>
+
+            <div class="category" id="pcm">
+                <div class="category__name">
+                    <a class="category__title">PC</a>
+                    <h6 class="category__subtitle">All components you need for PC</h6>
+                </div>
+
+                <div class="products">
+                    <div class="product">
+                        <img src="assets/img/products-media/pc/pc-components/graphics/nvidia/rtx-3090/geforce-rtx-3090 (5).jpg"
+                            alt="rtx 3090" class="product__img"></img>
+                        <span class="product__name product__text">GEFORCE RTX 3090</span>
+                        <span class="product__price product__text">$1,499</span>
+                        <span class="product__tag product__text graphics__tag">Graphics</span>
+                    </div>
+
+                    <div class="product">
+                        <img src="assets/img/products-media/pc/pc-peripherics/mouse/glorius-gaming/model-i-lightweight/model-i-hero.webp"
+                            alt="rtx 3090" class="product__img"></img>
+                        <span class="product__name product__text">MODEL I</span>
+                        <span class="product__price product__text">$59.99</span>
+                        <span class="product__tag product__text mice__tag">Mice</span>
+                    </div>
+
+                    <div class="product">
+                        <img src="assets/img/products-media/pc/pc-peripherics/keyboard/hyper-x/origins-60.jpg"
+                            alt="rtx 3090" class="product__img"></img>
+                        <span class="product__name product__text">ORIGINS 60</span>
+                        <span class="product__price product__text">$99,99</span>
+                        <span class="product__tag product__text graphics__tag">Graphics</span>
+                    </div>
+
+                    <div class="product">
+                        <img src="assets/img/products-media/pc/pc-components/microprocessor/amd/ryzen/ryzen-9-5950x/ryzen-9-5950x.jpg"
+                            alt="rtx 3090" class="product__img"></img>
+                        <span class="product__name product__text">GEFORCE RTX 3090</span>
+                        <span class="product__price product__text">$1,499</span>
+                        <span class="product__tag product__text keyboard__tag">Keyboard</span>
+                    </div>
+                </div>
+
             </div>
 
+
+            <!-- 
             <div class="category category__banner" id="consoles">
                 <a class="category__title">Consoles</a>
                 <h6 class="category__subtitle">Video game consoles.</h6>
@@ -107,7 +148,7 @@
                 <a href="#" class="category__title">Mobile</a>
                 <h6 class="category__subtitle">Smartphones, tablets and more</h6>
 
-            </div>
+            </div>  -->
         </div>
     </section>
 
