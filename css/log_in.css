@@ -1,0 +1,18 @@
+.form_container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.acces_form {
+    display: flex;
+    margin:1rem auto;
+    flex-direction: column;
+    width: 60%;
+    gap: 2rem;
+    padding: 1rem;
+}
