@@ -1,63 +1,7 @@
-
 @media screen and (min-width: 600px) {
-    .header {
-        height: 3rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    #logo {
-        width: 9rem;
-    }
-    
-    .nav__bar {
-        background-color: rgb(255, 255, 255);
-        font-family:'Josefin Sans', sans-serif;
-        align-items: center;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .item__list {
-        display: flex;
-        padding: 0 1rem;
-        font-size: 0.8rem;  
-    }
-    
-    .item__link {
-        margin: 0 1rem;
-        font-weight: 400;
-        color: #000000;
-    }
-
-    .icon {
-        font-size: 1.2rem;
-    }
-
     #home{
         height: 500px;
     }
-
-
-    /*hamburguer menu*/
-
-    #menu__container {
-        display: none;
-    }
-
-    .container {
-        display: none;
-    }
-
-    .logo__container {
-        display: none;
-    }
-    
-    .buttons__container{
-        display: none;
-    }
-
 
     /*PRODUCTS*/
     .products {
@@ -107,16 +51,3 @@
     }
 }
 
-@media screen and (min-width: 700px) {
-
-    .item__list {
-        font-size: 1rem;
-        align-items: center;
-    }
-
-    .icon {
-        margin-top: 3px;
-        font-size: 1.5rem;
-    }
-   
-}

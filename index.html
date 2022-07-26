@@ -10,83 +10,52 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/hamburguer-menu.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/log_in.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/categories.css">
     <link rel="stylesheet" href="css/product.css">
-    <link rel="stylesheet" href="css/log_in.css">
-    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav__bar">
-            <div class="left__menu menu__div">
-                <ul class="item__list">
-                    <li class="item"><a href="" class="item__link">HOME</a></li>
-                    <li class="item"><a href="" class="item__link">PRODUCTS</a></li>
-                    <li class="item"><a href="" class="item__link">ABOUT</a></li>
-                </ul>
-            </div>
 
-            <div class="center__menu menu__div">
-                <img id="logo" src="assets/img/tlaloc_store_logo.png" alt="tlaloc logo">
-            </div>
+    <header class="header" id="header">
+        <nav class="navbar container">
+           <a href="./index.html" class="brand"><img id="brand_img" src="/assets/img/tlaloc_store_logo.png" alt=""></a>
+           <div class="burger" id="burger">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+           </div>
+           <span class="overlay"></span>
+           <div class="menu" id="menu">
+              <ul class="menu-inner">
+                 <li class="menu-item"><a class="menu-link" href="/index.html">Home</a></li>
+                 <li class="menu-item"><a class="menu-link" href="#">Products</a></li>
+                 <li class="menu-item"><a class="menu-link" href="#">Service</a></li>
+                 <li class="menu-item"><a class="menu-link" href="#">About</a></li>
+                 <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
 
-            <div class="right__menu menu__div">
-                <ul class="item__list right__menu">
-                    <li class="item"><a href="" class="item__link"><i class='icon bx bx-search-alt-2'></i></a></li>
-                    <li class="item"><a href="" class="item__link"><i class='icon bx bx-user'></i></a></li>
-                    <li class="item"><a href="" class="item__link"><i class='icon bx bx-cart-alt'></i></a></li>
-                </ul>
-            </div>
+                 <li class="menu-item"><a  id="log_in_icon" class="menu-link" href="#"><i class="icon bx bx-user"></i></a></li>
+                 <li class="menu-item"><a class="menu-link" href="#"><i class="icon bx bx-shopping-bag"></i></a></li>
+              </ul>
+           </div>
+           <span><i class="bx bx-search search-toggle"></i></span>
+           <div class="search-block">
+              <form class="search-form">
+                 <span><i class="bx bx-arrow-back search-cancel"></i></span>
+                 <input type="search" name="search" class="search-input" placeholder="Search here...">
+              </form>
+           </div>
         </nav>
+     </header>
 
 
-        <div id="menu__container">
-            <div class="container">
-                <nav class="navigation" role="navigation">
-                    <div id="menuToggle">
 
-                        <input type="checkbox" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-
-                        <ul id="menu">
-                            <a href="#">
-                                <li>HOME</li>
-                            </a>
-                            <a href="#">
-                                <li>PRODUCTS</li>
-                            </a>
-                            <a href="#">
-                                <li>CONTACT</li>
-                            </a>
-                            <a href="#">
-                                <li>ABOUT</li>
-                            </a>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-
-
-            <div class="logo__container">
-                <img id="logo_hamburguer" src="assets/img/tlaloc_store_logo.png" alt="tlaloc logo">
-            </div>
-
-            <div class="buttons__container">
-                <a href=""><i id="user__account" class='btn__link bx bx-user'></i></a>
-                <a href=""><i id="shopping__cart" class='btn__link bx bx-cart-alt'></i></a>
-            </div>
-
-        </div>
-
-    </header>
-
+    <!-- HOME SECTION -->
     <section class="section" id="home">
         <div class="home-text">
             <h1 class="big-text home-main-text">INTRODUCING THE NEW STORE</h1>
@@ -94,13 +63,15 @@
         </div>
     </section>
 
+    <!-- ACCESS FORMS -->
     <section id="log_in" class="form_container">
         <h1>Log in</h1>
         <form class="acces_form" id="log_in_form" action="">
             <input class="log_in_input input_form" type="text" placeholder="Username">
             <input class="log_in_input input_form" type="password" placeholder="Password">
             <button id="log_in_btn" class=" form_btn">Log in</button>
-            <a href="#">Forgot your password?</a>
+            <a id="reset_password_btn" href="#">Forgot your password?</a>
+            <a id="register_btn" href="#">Register</a>
         </form>
     </section>
 
@@ -112,10 +83,24 @@
             <input class="sign_in_input input_form" type="password" placeholder="Password">
             <input class="sign_in_input input_form" type="password" placeholder="Confirm Password">
             <button id="sign_in_btn" class="form_btn">Sign in</button>
-            <a href="#">Forgot your password?</a>
         </form>
     </section>
 
+    <!-- ADD PRODUCTS -->
+    <section id="add_product">
+        <h1>Add Product</h1>
+        <form action="">
+            <label for="image">Upload Image</label>
+            <input type="file" name="image" id="">
+            <input type="text" placeholder="Product Name">
+            <input type="number" placeholder="Price">
+            <input type="text" placeholder="Tag">
+            <button>Add</button>
+
+        </form>
+    </section>
+
+    <!-- PRODUCTS -->
     <section class="section" id="product__categories_container">
         <div class="categories">
             <!-- PC CATEGORY -->
@@ -489,6 +474,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
 
     <footer class="footer">
         <div class="social__media">
@@ -507,6 +493,9 @@
     </footer>
 </body>
 
+<script src="javascript/jquery-3.6.0.min.js"></script>
 <script src="javascript/script.js"></script>
+<script src="javascript/access_script.js"></script>
+<script src="javascript/search_bar.js"></script>
 
 </html>
